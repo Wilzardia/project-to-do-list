@@ -102,6 +102,7 @@
       taskList.forEach((task, index) => {
         const li = document.createElement('li');
         li.innerHTML = `
+          <input type="checkbox">
           <span>${task}</span>
           <button class="delete-btn" onclick="deleteTask(${index})">Delete</button>
         `;
